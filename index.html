@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- styles -->
+    <link rel="stylesheet" href="style.css">
+    <title>Note App</title>
+</head>
+
+<body>
+
+    <header>
+        <h2 class="header">Note Taker</h2>
+        <p class="cr">Copyright &copy; 2021 MTSowa</p>
+    </header>
+    <!-- form section -->
+    <main>
+        <div class="note_form">
+            <h3>Add to my notes . ..</h3>
+            <div class="input_area">
+                <form action="/">
+                    <input id="form_input" placeholder="title" name="title" value='' />
+                    <textarea name="text-area" id="form_textArea" cols="70" rows="5" placeholder="type note"></textarea>
+                    <button id="form_btn" type="submit">Add Note</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- container for all Notes -->
+        <div class="note_list" id="note_list">
+        </div>
+    </main>
+    <!-- the modal -->
+    <div class="modal_wrapper" id="modal_wrapper">
+        <div class="modal_content_wrapper">
+            <div class="close_modal">+</div>
+            <div class="modal-header">
+                <h3 id="mh">This Header</h3>
+            </div>
+            <p class="modal_content" id="mc">
+                The content
+            </p>
+        </div>
+    </div>
+
+    <!-- scripts -->
+    <script src="app.js"></script>
+</body>
+
+</html>
